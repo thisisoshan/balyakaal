@@ -10,6 +10,7 @@ html, body {
 body {
     height: 100%;
     width: 100%;
+    font-family:  sans-serif;
 }
 a {
     text-decoration: none;
@@ -18,10 +19,9 @@ a {
 
 
 
-/*----------------*/
-/*------ Nav -----*/
-/*----------------*/
-
+/*-----------------------------*/
+/*------------- Nav -----------*/
+/*-----------------------------*/
 nav {
     position: relative;
     top: 0;
@@ -42,7 +42,7 @@ nav {
     top: 0;
     left: 50px;
 }
-nav .nav a img {
+nav .nav .brand img {
     height: 155px;
     width: auto;
 }
@@ -56,7 +56,7 @@ nav .nav a img {
 .links {
     width: 140px;
     height: 100%;
-    color: purple;
+    color: #1f0299;
     position: relative;
     text-align: center;
     display: inline-block;
@@ -72,67 +72,137 @@ nav .nav a img {
 .links a p {
     display: table-cell;
     vertical-align: middle;
-    font-size: 26px;
+    font-size: 1.15rem;
     font-weight: bold;
-    font-family: 'Aladin', cursive;
 }
 
 
-
-/*----------------------*/
-/*-------- Main --------*/
-/*----------------------*/
-
+/*-------------------------------*/
+/*------------- Main ------------*/
+/*-------------------------------*/
 main {
-    width: 1240px;
+    width: 100%;
     height: 100%;
     padding: 0px 0;
     margin: auto;
+    position: relative;
 }
 .carousel {
-    height: 400px;
+    height: auto;
     width: 100%;
     background: #cccccc;
+    transition: 0.5s ease;
 }
 .carousel-container {
     width: 100%;
-    height: 100%;
+    height: auto;
+    transition: 0.5s ease;
 }
 .carousel-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin: auto;
 }
 
-
-/*----------------------*/
-/*------- Welcome ------*/
-/*----------------------*/
+/*------------------------------------*/
+/*-------------- Welcome -------------*/
+/*------------------------------------*/
 .welcome {
     width: 100%;
-    height: 250px;
+    height: auto;
     text-align: center;
-    position: relative;
 }
 .welcome h1 {
-    margin: 70px 0 30px 0;
-    font-family: 'Aladin', cursive;
-    font-size: 2.5em;
+    margin: 2.5rem 0 15px 0;
+    font-size: 2em;
 }
 .welcome p {
-    font-family: 'Delius';
-    padding: 0 70px;
-    font-size: 26px;
-    position: absolute;
-    left: 0;
-    bottom: 90px;
+    padding: 0 70px 50px 70px;
+    font-size: 1.25rem;
 }
 .welcome .tag {
-    position: absolute;
-    bottom: 50px;
-    right: 70px;
-    font-family: 'Aladin', cursive;
-    font-size: 18px;
+    font-size: 1rem;
 }
 .tag:before {
     content: "-";
+}
+
+/*-----------------------------------*/
+/*--------------- Grid --------------*/
+/*-----------------------------------*/
+.grid {
+    width: 90%;
+    margin:50px auto;
+    
+    -moz-column-width: 220px;
+    -webkit-column-width: 220px;
+    column-width: 220px;
+    
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+}
+a[title] figure img{
+    width: 100%;
+    height: auto;
+    margin-top:1rem;
+}
+.grid a[title]{
+    text-decoration: none;
+    padding: 1rem;
+    color:#424242;
+    box-shadow: 0 1px 3px rgba(0,0,0, .12), 0 1px 2px rgba(0,0,0, .24);
+    display: inline-block;
+    
+    margin-bottom:20px;
+    
+    transition: all .3s cubic-bezier(0.25, .8, .25, 1);
+}
+.grid:hover a[title]:not(:hover){
+    opacity: .6;
+}
+
+a[title]:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .20);
+    
+}
+
+
+/*------------------------------------*/
+/*----------- Media Queries ----------*/
+/*------------------------------------*/
+@media (max-width: 1239px){
+    nav {
+        height: 50px;
+    }
+    .nav {
+        width: 700px;
+    }
+    nav .nav .brand img {
+        height: 75px;
+    }
+    .nav-links {
+        height: 50px;
+        width: 480px;
+        bottom: 0;
+        right: 0;
+    }
+    .links {
+        width: 90px;
+    }
+    .links a p {
+        font-size: 0.85rem;
+    }
+    .welcome p {
+        font-size: 1.15rem;
+    }
+}
+@media (min-width: 1441px) {
+    main {
+        width: 1440px;
+    }
 }
