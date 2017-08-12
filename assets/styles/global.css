@@ -25,14 +25,20 @@ nav {
     position: relative;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 150px;
     width: 100%;
-    background: #96f088;
+    background: #fff;
     z-index: 9999999999;
+}
+.social {
+    position: static;
+    height: 40px;
+    width: 100%;
+    background: #ffc901;
 }
 .nav {
     height: 100%;
-    width: 1240px;
+    width: 1200px;
     position: relative;
     margin: auto;
 }
@@ -42,7 +48,8 @@ nav {
     left: 50px;
 }
 nav .nav .brand img {
-    height: 155px;
+    height: 100px;
+    padding: 10px 0 0 0;
     width: auto;
 }
 .nav b {
@@ -58,7 +65,7 @@ nav .nav .brand img {
 .nav-links {
     position: absolute;
     right: 10px;
-    bottom: 15px;
+    bottom: 55px;
     width: 780px;
     height: 70px;
 }
@@ -152,6 +159,16 @@ main {
     width: 100%;
     height: auto;
     transition: 0.5s ease;
+    position: relative;
+}
+.carousel-container .info {
+    height: auto;
+    background: rgba(204,0,0, .5);
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    padding: 40px 60px 40px 40px;
+    color: white;
 }
 .carousel-container img {
     width: 100%;
@@ -164,22 +181,37 @@ main {
 /*------------------------------------*/
 .welcome {
     width: 100%;
-    height: auto;
-    text-align: center;
+    height: 300px;
+    text-align: left;
+    margin: 80px 0px;
+    position: relative;
 }
-.welcome h1 {
-    margin: 2.5rem 0 15px 0;
-    font-size: 2em;
+.welcome .text, .welcome .image {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
-.welcome p {
-    padding: 0 70px 50px 70px;
-    font-size: 1.25rem;
+.welcome .text {
+    left: 0;
+    padding: 0 0 0 50px;
 }
-.welcome .tag {
-    font-size: 1rem;
+.welcome .image {
+    background: url('../images/welcome.jpg') center no-repeat scroll;
+    background-size: cover;
+    right: 0;
+    padding: 0 50px 0 0;
 }
-.tag:before {
-    content: "-";
+.welcome .text h3 {
+    margin: 2.5rem 1.25rem 15px 0;
+    padding: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 222;
+}
+.welcome .text p {
+    font-size: 1.125rem;
+    padding: 0 20px 0 5px;
 }
 
 /*-----------------------------------*/
@@ -188,15 +220,12 @@ main {
 .grid {
     width: 90%;
     margin:50px auto;
-    
     -moz-column-width: 220px;
     -webkit-column-width: 220px;
     column-width: 220px;
-    
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-    
     -moz-column-gap: 20px;
     -webkit-column-gap: 20px;
     column-gap: 20px;
@@ -220,6 +249,9 @@ a[title] figure img{
 .grid a[title] article h2 {
     padding: 10px 0;
 }
+.grid a[title] article h2:after {
+    content: "...";
+}
 .grid:hover a[title]:not(:hover){
     opacity: 1.0;
 }
@@ -235,7 +267,7 @@ a[title]:hover{
 /*------------------------------------*/
 @media (max-width: 1239px){
     nav {
-        height: 50px;
+        height: 70px;
     }
     .nav {
         width: 100%;
@@ -287,7 +319,11 @@ a[title]:hover{
     }
     .nav .brand {
         position: static;
-    }    .nav b {
+    }
+    nav .nav .brand img {
+        height: 75px;
+    }
+    .nav b {
         display: block;
     }
 }
