@@ -1,0 +1,61 @@
+.context {
+    width: 750px;
+    margin: auto;
+    height: auto;
+    padding: 100px 50px 10px 50px;
+}
+.context h1, .context p {
+    display: inline-block;
+}
+.context p {
+    padding: 0 10px;
+}
+.form {
+    width: 500px;
+    margin: auto;
+}
+input[type="text"], .submit, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 2.5px 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit {
+    background: linear-gradient(05deg, #93dd87, #96f088)
+}
+textarea {
+    resize: none;
+    height: 100px;
+}
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+}
+
+
+
+/*---------- Mobile ---------*/
+@media (max-width: 849px) {
+    .context {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .context {
+        width: 100%;
+        padding: 50px 20px 15px 20px;
+    }
+    .context h1 {
+        display: block;
+    }
+    .context p {
+        padding: 0;
+    }
+    .form {
+        width: 100%;
+        padding: 0 10px;
+        margin-left: 0;
+    }
+}
