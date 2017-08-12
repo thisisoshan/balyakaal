@@ -227,6 +227,11 @@ main {
     font-size: 1.125rem;
     padding: 0 20px 0 5px;
 }
+@media (max-width: 1024px) {
+    .welcome {
+        height: 350px;
+    }
+}
 @media (max-width: 768px) {
     .welcome {
         height: 720px;
