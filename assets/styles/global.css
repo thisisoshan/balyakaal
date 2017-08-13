@@ -277,6 +277,7 @@ main {
     height: auto;
     background: #ffc901;
     text-align: center;
+    animation: bg 3s ease 0s infinite;
 }
 .about h2 {
     text-transform: uppercase;
@@ -284,6 +285,11 @@ main {
 }
 .about p {
     padding: 30px 20px 70px 20px;
+}
+
+@keyframes bg {
+    0%, 100% {background: #ffc901}
+    50% {background: #82cc2b}
 }
 
 
