@@ -44,16 +44,19 @@ nav {
     width: 100%;
     height: 100%;
     position: relative;
+    margin: 0 auto;
 }
-.social .social-content a {
+.social .social-content .cta {
     position: absolute;
     top: 12px;
-}
-.email {
     left: 50px;
+    font-size: 1.15rem;
 }
 .tel {
-    right: 50px;
+    margin-left: 30px;
+}
+.social .social-content .cta a i {
+    font-size: 1.45rem;
 }
 .nav {
     height: 100%;
@@ -71,15 +74,21 @@ nav .nav .brand img {
     padding: 0;
     width: auto;
 }
-.nav b {
+.nav div.toggle {
     cursor: pointer;
     position: absolute;
+    color: #F9DA67;
     top: 5px;
     right: 5px;
-    background: black;
     height: 40px;
     width: 40px;
     display: none;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.nav div.toggle i {
+    font-weight: 100;
+    padding: 0 8px;
 }
 .nav-links {
     position: absolute;
@@ -116,7 +125,7 @@ nav .nav .brand img {
 .mobilenav {
     height: 100%;
     width: 100%;
-    background: #96f088;
+    background: white;
     position: absolute;
     top: 0;
     right: 100%;
@@ -131,10 +140,14 @@ nav .nav .brand img {
     cursor: pointer;
     height: 40px;
     width: 40px;
-    background: black;
     position: absolute;
     top: 5px;
     right: 5px;
+}
+.mobilenav b i {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 0 8px;
 }
 .mobnav {
     height: 60%;
@@ -149,6 +162,7 @@ nav .nav .brand img {
     margin: 10px auto;
 }
 .moblinks a {
+    font-size: 1.25rem;
     padding: 5px 0;
     border-bottom: 1px dotted black;
 }
@@ -267,6 +281,9 @@ main {
     .welcome .image img {
         margin: 0;
     }
+    .social .social-content {
+        width: 720px;
+    }
 }
 @media (max-width: 425px) {
     .welcome {
@@ -279,9 +296,11 @@ main {
     }
     .welcome .text h3 {
         margin: 0 20px 15px 0;
+        text-align: center;
     }
     .welcome .text p {
-        margin: 0 0 20px 0
+        margin: 0 0 20px 0;
+        text-align: justify;
     }
     .welcome .image {
         position: static;
@@ -295,7 +314,7 @@ main {
     height: auto;
     background: #8D6BFD;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -145px;
 }
 .about h2 {
     text-transform: uppercase;
@@ -303,11 +322,54 @@ main {
 }
 .about p {
     padding: 30px 20px 60px 20px;
+    text-align: justify;
     font-size: 1.715rem;
 }
 
 
-
+/*------------------------------------*/
+/*------------- Reference ------------*/
+/*------------------------------------*/
+.reference {
+    width: 100%;
+    height: auto;
+}
+.refchild {
+    width: 75%;
+    height: 300px;
+    position: relative;
+    font-size: 1.75rem;
+    margin: 50px auto;
+}
+.reftext {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 100px 30px 20px 30px;
+}
+.refimage {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.reference .refchild:nth-child(odd) .refimage {
+    right: 0;
+}
+.reference .refchild:nth-child(odd) .reftext {
+    left: 0;
+}
+.reference .refchild:nth-child(even) .refimage {
+    left: 0;
+}
+.reference .refchild:nth-child(even) .reftext {
+    right: 0;
+}
+.refimage img {
+    width: auto;
+    height: 100%;
+}
 
 
 /*------------------------------------*/
@@ -341,10 +403,16 @@ main {
     .welcome p {
         font-size: 1.15rem;
     }
+    .social .social-content .cta {
+        left: 20px;
+    }
 }
 
 @media (min-width: 1441px) {
     main {
+        width: 1440px;
+    }
+    .social .social-content {
         width: 1440px;
     }
 }
@@ -371,10 +439,13 @@ main {
     nav .nav .brand img {
         height: 75px;
     }
-    .nav b {
+    .nav div.toggle {
         display: block;
     }
     .social {
         display: none;
+    }
+    .about {
+        margin-top: -120px;
     }
 }
