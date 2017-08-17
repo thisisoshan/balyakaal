@@ -61,53 +61,17 @@
         </div>
         
     <main>
-        <!--<div class="context">
-            <h1>Contact</h1><p><i>Our excellent IT team will return to you ASAP.</i></p>
+        <div class="map">
+            <h2>Find us here...</h2>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2100.6323297735166!2d85.33079326412837!3d27.69169835376033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1502937523996"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="form">
-            <form method="POST">
-                <input type="text" name="fname" placeholder="Your first name (required)">
-                <input type="text" name="mname" placeholder="Your middle name (optional)">
-                <input type="text" name="lname" placeholder="Your last name (required)">
-                <input type="text" name="email" placeholder="Your email address (optional)">
-                <textarea type="text" name="msg" placeholder="Your messege"></textarea>
-                <button type="submit" class="submit">Submit</button>
-            </form>
-        </div>-->
         <div class="formContent">
-            <!--<div class="container">
-                <h2>Horizontal form</h2>
-                <form class="form-horizontal" action="/action_page.php">
-                    <div class="form-group">
-                    <label class="control-label col-sm-2" for="email">Email:</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Password:</label>
-                    <div class="col-sm-10">          
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                    </div>
-                    </div>
-                    <div class="form-group">        
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                        <label><input type="checkbox" name="remember"> Remember me</label>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="form-group">        
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                    </div>
-                </form>
-            </div>-->
             <div class="container">
                 <div class="row main">
                     <div class="main-login main-center">
-                    <h5>Sign up once and watch any of our free demos.</h5>
+                    <h1 style="margin: 20px 0 30px 0;">Or send us an email. We'll get to you.</h1>
                         <form class="" method="post" action="#">
                             
                             <div class="form-group">
@@ -124,7 +88,7 @@
                                 <label for="email" class="cols-sm-2 control-label">Your Email</label>
                                 <div class="cols-sm-10">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></span>
                                         <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
                                     </div>
                                 </div>
@@ -134,7 +98,7 @@
                                 <label for="password" class="cols-sm-2 control-label">Address</label>
                                 <div class="cols-sm-10">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span>
                                         <input type="password" class="form-control" name="address" id="password"  placeholder="Enter your address"/>
                                     </div>
                                 </div>
@@ -144,7 +108,7 @@
                                 <label for="username" class="cols-sm-2 control-label">Mobile</label>
                                 <div class="cols-sm-10">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i></span>
                                         <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your contact number (mobile)"/>
                                     </div>
                                 </div>
@@ -155,29 +119,28 @@
                                 <label for="confirm" class="cols-sm-2 control-label">Your Messege</label>
                                 <div class="cols-sm-10">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                        <input type="password" class="form-control" name="messege" id="confirm"  placeholder="Enter your messege"/>
+                                        <span class="input-group-addon"><i class="fa fa-comment-o fa-lg" aria-hidden="true"></i></span>
+                                        <textarea rows="5" type="password" style="resize: none;" class="form-control" name="messege" id="confirm"  placeholder="Enter your messege"/></textarea>
                                     </div>
                                 </div>
                             </div>
     
                             <div class="form-group ">
-                                <a target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                                <a target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Send</a>
                             </div>
                             
                         </form>
                     </div>
                 </div>
             </div>
-        
         </div>
     </main>
     <script src="assets/plugins/jquery-3.2.1.min.js"></script>
     <script src="assets/plugins/js/bootstrap.js"></script>
     <script>
-        $('.nav b').on('click', function() {
+        $('.nav .toggle').on('click', function() {
             $('.mobilenav').addClass("active");
-        })
+        });
         $('.mobilenav b').on('click', function() {
             $('.mobilenav').removeClass("active");
         })
