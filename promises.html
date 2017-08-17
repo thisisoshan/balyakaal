@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Balyakaal</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Aladin|Delius" rel="stylesheet">
+    <link href="assets/plugins/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/comingsoon.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="social">
+            <div class="social-content">
+                <div class="cta">
+                    <a href="mailto:contact@balyakaal.com" class="email"><i class="fa fa-envelope">&nbsp;&nbsp;</i>contact@balyakaal.com</a>
+                    <a href="tel:9851034449" class="tel"><i class="fa fa-phone">&nbsp;&nbsp;</i>9851034449</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <a class="brand" href="./"><img src="assets/images/montessori_balyakaal.svg" alt=""></a>
+            <div class="toggle"><i class="fa fa-bars"></i></div>
+            <div class="nav-links">
+                <div class="links">
+                    <a href="./about"><p>About Us</p></a>
+                </div>
+                <div class="links">
+                    <a href="./promises"><p>Our Promises</p></a>
+                </div>
+                <div class="links">
+                    <a href="./schedule"><p>Schedule</p></a>
+                </div>
+                <div class="links">
+                    <a href="./supervision"><p>Supervision</p></a>
+                </div>
+                <div class="links">
+                    <a href="./contact"><p>Contact</p></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobilenav">
+        <b><i class="fa fa-times"></i></b>
+        <div class="mobnav">
+            <div class="moblinks"><a href="./about">About Us</a></div>
+            <div class="moblinks"><a href="./promises">Our Promises</a></div>
+            <div class="moblinks"><a href="./schedule">Schedule</a></div>
+            <div class="moblinks"><a href="./supervision">Supervision</a></div>
+            <div class="moblinks"><a href="./contact">Contact</a></div>
+        </div>
+    </div>
+
+    <main>
+        <div class="comingsoon">
+            <h1>Coming soon...</h1>
+            <p>Our excellent IT team is doing their best to bring the best to you.
+                So, please keep patience, our IT team will update this page very soon.
+            </p>
+        </div>
+        
+    </main>
+    <script src="assets/plugins/jquery-3.2.1.min.js"></script>
+    <script src="assets/plugins/owl.carousel.min.js"></script>
+    <script>
+        $('.carousel').owlCarousel({
+            margin: 0,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            items: 1,
+            animateOut: 'fadeOut'
+        });
+        $('.nav .toggle').on('click', function() {
+            $('.mobilenav').addClass("active");
+        });
+        $('.mobilenav b').on('click', function() {
+            $('.mobilenav').removeClass("active");
+        })
+    </script>
+</body>
+
+</html>

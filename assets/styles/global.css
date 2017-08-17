@@ -260,31 +260,7 @@ main {
     font-size: 1.725rem;
     padding: 0 20px 0 5px;
 }
-@media (max-width: 1024px) {
-    .welcome {
-        height: 350px;
-    }
-}
-@media (max-width: 768px) {
-    .welcome {
-        height: 720px;
-    }
-    .welcome .text, .welcome .image {
-        width: 100%;
-    }
-    .welcome .image {
-        width: 100%;
-        top: 250px;
-        margin: 0;
-        padding: 0;
-    }
-    .welcome .image img {
-        margin: 0;
-    }
-    .social .social-content {
-        width: 720px;
-    }
-}
+
 @media (max-width: 425px) {
     .welcome {
         height: auto;
@@ -314,7 +290,7 @@ main {
     height: auto;
     background: #8D6BFD;
     text-align: center;
-    margin-top: -145px;
+    margin-top: -125px;
 }
 .about h2 {
     text-transform: uppercase;
@@ -333,6 +309,7 @@ main {
 .reference {
     width: 100%;
     height: auto;
+    margin: auto;
 }
 .refchild {
     width: 75%;
@@ -375,6 +352,7 @@ main {
 /*------------------------------------*/
 /*----------- Media Queries ----------*/
 /*------------------------------------*/
+
 @media (max-width: 1239px){
     nav {
         height: 110px;
@@ -416,6 +394,41 @@ main {
         width: 1440px;
     }
 }
+@media (max-width: 1024px) {
+    .welcome {
+        height: 350px;
+    }
+}
+
+/*----- Tablet -----*/
+@media (max-width: 768px) {
+    .welcome {
+        height: 720px;
+    }
+    .welcome .text, .welcome .image {
+        width: 100%;
+    }
+    .welcome .image {
+        width: 100%;
+        top: 250px;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome .image img {
+        margin: 0;
+    }
+    .social .social-content {
+        width: 720px;
+    }
+    .reftext {
+        padding: 30px 35px 30px 5px;
+        text-align: justify;
+    }
+    .refimage img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 /*---------- Mobile ---------*/
 @media (max-width: 425px) {
@@ -447,5 +460,25 @@ main {
     }
     .about {
         margin-top: -120px;
+    }
+    .refchild {
+        width: 100%;
+        margin: 150px 0
+    }
+    .reftext {
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: justify;
+        padding: 10px 30px;
+        position: relative;
+    }
+    .reftext h1 {
+        text-align: center;
+    }
+    .refimage {
+        position: relative;
+        width: 100%;
+        margin-top: -175px;
     }
 }
