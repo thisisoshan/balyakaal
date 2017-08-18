@@ -197,12 +197,22 @@ main {
 }
 .carousel-container .info {
     height: auto;
-    background: rgba(204,0,0, .5);
+    background: rgba(204,0,0, .45);
     position: absolute;
     bottom: 0;
     left: 50px;
     padding: 40px 60px 40px 40px;
     color: white;
+}
+.carousel-container .info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    transform: scaleX(1.01);
+    background: rgb(90, 0, 0);
 }
 .carousel-container .info p {
     font-size: 1.5rem;
@@ -289,7 +299,7 @@ main {
 .about {
     width: 100%;
     height: auto;
-    background: #8D6BFD;
+    background: #A3DBDC;
     text-align: center;
     margin-top: -125px;
 }
@@ -298,7 +308,7 @@ main {
     padding: 50px 0 0 0;
 }
 .about p {
-    padding: 30px 20px 60px 20px;
+    padding: 30px 100px 60px 100px;
     text-align: justify;
     font-size: 1.715rem;
 }

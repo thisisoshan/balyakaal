@@ -29,13 +29,17 @@ label{
     margin-bottom: 15px;
     font-size: 1.25rem;
 }
-
 input,
 input::-webkit-input-placeholder {
-    font-size: 1.125rem;
+    font-size: 1.425rem;
     padding-top: 3px;
 }
-
+input[type], textarea[type] {
+    font-size: 1.425rem;
+}
+input:active {
+    outline: none;
+}
 .main-login{
  	background-color: #fff;
     /* shadows and rounded borders *//*
@@ -50,32 +54,33 @@ input::-webkit-input-placeholder {
     height: auto !important;
     padding: 8px 12px !important;
 }
-.input-group {/*
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;*/
-}
 #button {
     margin-top: 28px;
     padding: 6px 12px;
     color: white;
     cursor: pointer;
+    border: none;
+    font-size: 1.425rem;
 }
 .main-center{
  	margin-top: 30px;
  	margin: 0 auto;
  	max-width: 400px;
-    padding: 10px 40px;
-	background: #88C63F;
-    color: #FFF;
+    padding: 10px 40px;/*
+	background: #e3e3e3;
+    color: #FFF;*/
+    border: 1px solid #d8d8d8;
     text-shadow: none;/*
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);*/
 
 }
+span.input-group-addon {
+    background: #fff;
+}
 span.input-group-addon i {
-    color: #007bff;
+    color: #FCCB18;
     font-size: 17px;
 }
 
