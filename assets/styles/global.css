@@ -59,6 +59,9 @@ nav {
 .social .social-content .cta a i {
     font-size: 1.45rem;
 }
+.social .social-content .cta a:hover {
+    color: #1f0299;
+}
 .nav {
     height: 100%;
     width: 1200px;
@@ -105,7 +108,18 @@ nav .nav .brand img {
     position: relative;
     text-align: center;
     display: inline-block;
-}
+}/*
+.links:after {
+    content: "";
+    height: 0px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ffc901;
+    transition: all 0.25s ease;
+    margin: 0 auto;
+}*/
 .links a {
     display: table;
     position: absolute;
@@ -113,6 +127,12 @@ nav .nav .brand img {
     left: 0;
     height: 100%;
     width: 100%;
+    transition: border 0.5s ease;
+    border: 1px solid rgba(0,0,0,0);
+}
+.links a:hover {
+    color: #1f0299;
+    border: 1px solid rgba(31, 2, 153, 0.75);
 }
 .links a p {
     display: table-cell;
